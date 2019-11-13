@@ -181,3 +181,25 @@ Just select whether you were present or absent in a particular class everytime t
 - **Resources:**
   - Refer the SQLite documentation: [SQLite Docs](https://developer.android.com/training/data-storage/sqlite)
   - Refer the Room documentation: [Save data in a local database using Room](https://developer.android.com/training/data-storage/room/)
+
+
+## 3. Car Pooling App
+
+- **Suggested Audience:** Second year and above
+- **Description:** A Cross-platform App which helps you to book a cab/taxi available in your nearby location. You also need to make a small Driver App through which you can able to receive cab request and then after confirmation of the request, you need to ask for authentication code from your customer and then display the map route to reach the destination place.
+
+- **Goals:** 
+  - Phase 1: Build the frontend for the app.
+  - Phase 2: Store all the information in Firebase database (NoSQL).
+  - Phase 3: Add user authentication OAuth functions from Firebase for e.g. Google Sign-in etc.
+  - Phase 4: Use Google Maps or Mapbox API to render the map in your app.
+  - Phase 5: Add Realtime Socket Communication Protocol for tracking purpose.
+
+- **Requirements:** 
+  - Knowledge of React-native/React.js with Redux, Java, Swift, JavaScript, XML and Android basics.
+  - Knowledge of NoSQL, Firebase, Google Maps API.
+  - Knowledge of Socket.io, Material UI or any UI Framework. 
+  
+- **Resources:**
+  - Refer the React.js and React-native documentation: [React.js Docs](https://reactjs.org/) [React-native Docs](https://facebook.github.io/react-native/)
+  - Refer the Firebase documentation: [Save data in a NoSQL database using Firebase](https://firebase.google.com/docs)
