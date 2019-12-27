@@ -9,6 +9,8 @@
   * [1. Bookmark Manager Web extension](#1-bookmark-manager-web-extension)
   * [2. Note Board](#2-note-board)
   * [3. Newsroom (Website)](#3-newsroom-website)
+  * [4. JUET Docs (Website)](#4-juet-docs)
+  * [5. To-Do App (Website)](#5-to-do-app)
 - [Android App Development](#android-app-development)
   * [1. Shared Calendar](#1-shared-calendar)
   * [2. Newsroom (Android App)](#2-newsroom-android-app)
@@ -133,6 +135,36 @@
 - **Resources:**
   - Refer the Graph API documentation: [Graph API Docs](https://developers.facebook.com/docs/graph-api)
 
+## 4. Juet Docs
+
+- **Suggested Audience:** First Year and Above
+- **Description:** A website like Google Docs for Online Text Editing like Google Docs it includes
+1. The user can Make new Documents.
+2. User can Edit past saved Documents.
+3. Users can export all the Documents in theree formats(ex:docx,pdf,txt).
+- **Goals:**
+  - Build the website fullfiling these functionalities.
+- **Requirements:**
+  - knowledge of HTML, CSS , JavaScript and React.JS.
+  - Firebase will be used for database purpose.
+- **Resources:**
+  - Refer the tutorial [here](https://reactjs.org/docs/getting-started.html) on how to build a React App.
+  
+  ## 5. To-Do App
+
+- **Suggested Audience:** First year and Second Year
+- **Description:** A web app, which is in the category of Task Management, Project Management, Productivity, “Getting Things Done” (GTD), Scheduling, and Collaboration
+1. Users can save their work labels with title and description.
+2. User can Edit past saved Documents.
+3. Users can also mark their work completed. It shows separate list of completed work and Incomplete tasks.
+- **Goals:**
+  - Build the frontend more attractive and add more functionalities in web-app up to completion/adequate progress.
+- **Requirements:**
+  - knowledge of HTML, CSS , JavaScript and React.JS.
+  - Django
+- **Resources:**
+  - Refer the tutorial [here](https://reactjs.org/docs/getting-started.html) on React.
+  - Refer the tutorial [here](https://docs.djangoproject.com/en/3.0/) on Django.
 
 # Android App Development
 
