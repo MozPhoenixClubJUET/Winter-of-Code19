@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Club Calendar</string>
+    <string name="splash_screen_icon">app icon</string>
+    <string name="hint_email">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="text_forgot_password">If forgot password, contact the admin.</string>
+    <string name="test">Test</string>
+</resources>

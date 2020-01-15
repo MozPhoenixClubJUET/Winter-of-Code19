@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clubHomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#005FE2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/MenuStyle">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width = "45dp"
+            android:layout_height = "45dp"
+            android:id = "@+id/profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text = "@string/test"
+            android:id="@+id/username"
+            android:fontFamily="@font/roboto"
+            android:textSize="22sp"
+            android:textColor="#ffffff"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    
+
+</RelativeLayout>
