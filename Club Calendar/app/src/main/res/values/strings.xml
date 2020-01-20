@@ -3,6 +3,12 @@
     <string name="splash_screen_icon">app icon</string>
     <string name="hint_email">Email</string>
     <string name="password_hint">Password</string>
-    <string name="text_forgot_password">If forgot password, contact the admin.</string>
-    <string name="test">Test</string>
+    <string name="text_forgot_password">If forgot password, click here.</string>
+    <string name="test">abcd</string>
+    <string name="event_name">Event Name</string>
+    <string name="date_23_jan_2019">Date (23/01/2019)</string>
+    <string name="venue">Venue</string>
+    <string name="enter_your_email_address">Enter Your Email address</string>
+    <string name="club_name">Club Name</string>
+    <string name="description">Description</string>
 </resources>

@@ -6,4 +6,10 @@
         android:id="@+id/logout"
         android:title="Logout"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/resetpassword"
+        android:title="Reset Password"
+        app:showAsAction="never"/>
+
 </menu>

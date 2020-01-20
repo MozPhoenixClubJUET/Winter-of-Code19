@@ -4,13 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5B84FF"
     tools:context=".eventsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#1A4458"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Events"
-        android:layout_centerInParent="true"
-        android:textSize="24dp"/>
+        android:padding="10dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/MenuStyle">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width = "45dp"
+            android:layout_height = "45dp"
+            android:id = "@+id/profile_image"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text = "@string/test"
+            android:id="@+id/username"
+            android:fontFamily="@font/roboto"
+            android:textSize="22sp"
+            android:textColor="#ffffff"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/list_view"
+        android:padding="10dp"/>
 
 </RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/event_item_backg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="Code Classes"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:id="@+id/item_event_name"
+                android:background="@drawable/item_backg" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="wrap_content"
+                android:text="LT-1"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/item_venue"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/item_backg_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="@string/club_name"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:id="@+id/item_club_name"
+                android:background="@drawable/item_backg" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="wrap_content"
+                android:text="23/01/2019"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:id="@+id/item_date"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:background="@drawable/item_backg_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="14sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:id="@+id/description_event_item"
+                android:background="@drawable/item_backg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

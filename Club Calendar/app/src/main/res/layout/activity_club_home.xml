@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5B84FF"
     tools:context=".clubHomeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:background="#005FE2"
+        android:background="#1A4458"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -18,7 +19,8 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width = "45dp"
             android:layout_height = "45dp"
-            android:id = "@+id/profile_image"/>
+            android:id = "@+id/profile_image"
+            android:src="@drawable/icon"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +33,24 @@
             android:textColor="#ffffff"/>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/list_view"
+        android:padding="15dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/add_event_floating_button"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/icon"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"/>
 
     
 
