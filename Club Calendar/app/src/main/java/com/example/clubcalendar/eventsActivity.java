@@ -71,6 +71,7 @@ public class eventsActivity extends AppCompatActivity {
                 EventList eventAdapter = new EventList(eventsActivity.this, events);
                 //attaching adapter to the listview
                 listViewEvents.setAdapter(eventAdapter);
+                listViewEvents.setEmptyView(findViewById(R.id.empty));
             }
 
             @Override

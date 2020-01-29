@@ -40,7 +40,18 @@
         android:layout_below="@id/toolbar"
         android:layout_marginTop="10dp"
         android:id="@+id/list_view"
-        android:padding="15dp"/>
+        android:padding="15dp"
+        android:descendantFocusability="blocksDescendants"
+        android:longClickable="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone"
+        android:background="#F7F7F7"
+        android:id="@+id/empty"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -52,6 +63,5 @@
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="40dp"/>
 
-    
 
 </RelativeLayout>

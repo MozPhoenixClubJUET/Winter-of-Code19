@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#7968FB"
-    tools:context=".addEventActivity">
+    tools:context=".updateActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_gravity="center"
-        android:src="@drawable/add_an_event_text"/>
+        android:src="@drawable/update_event"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,6 +29,21 @@
         android:inputType="text"
         android:hint="@string/event_name"
         android:id="@+id/event_name"
+        android:background="@drawable/add_edittext"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_gravity="center"
+        android:hint="@string/club_name"
+        android:inputType="textPersonName"
+        android:id="@+id/club_name"
         android:background="@drawable/add_edittext"
         android:layout_marginBottom="20dp"/>
 
@@ -93,8 +108,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add this event"
-            android:id="@+id/add_event"
+            android:text="UPDATE EVENT"
+            android:id="@+id/update_event"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:fontFamily="@font/roboto"

@@ -42,4 +42,13 @@
         android:id="@+id/list_view"
         android:padding="10dp"/>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone"
+        android:background="#F7F7F7"
+        android:id="@+id/empty"/>
+
 </RelativeLayout>

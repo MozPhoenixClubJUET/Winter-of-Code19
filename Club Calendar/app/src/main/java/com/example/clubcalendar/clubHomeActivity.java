@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,19 +59,12 @@ public class clubHomeActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         add = findViewById(R.id.add_event_floating_button);
 
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(clubHomeActivity.this, addEventActivity.class);
-                intent.putExtra("usid", firebaseUser.getUid());
-                startActivity(intent);
-            }
-        });
-
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
 
-        Toast.makeText(clubHomeActivity.this, "We will get it ready in 5 seconds", Toast.LENGTH_SHORT).show();
+        for(int i = 0; i < 10; i++){
+            Toast.makeText(clubHomeActivity.this, "We will get it ready in 5 seconds. Till that, read about the app in the info section.", Toast.LENGTH_LONG).show();
+        }
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -86,9 +80,18 @@ public class clubHomeActivity extends AppCompatActivity {
             }
         });
 
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(clubHomeActivity.this, addEventActivity.class);
+                intent.putExtra("usid", firebaseUser.getUid());
+                intent.putExtra("usna", usernamecurr);
+                startActivity(intent);
+            }
+        });
+
 
     }
-
 
 
     @Override
@@ -108,6 +111,7 @@ public class clubHomeActivity extends AppCompatActivity {
                     //getting event
                     Event event = postSnapshot.getValue(Event.class);
                     //adding event to the list
+                    event.setEventId(postSnapshot.getKey());
                     events.add(event);
                 }
 
@@ -115,6 +119,38 @@ public class clubHomeActivity extends AppCompatActivity {
                 EventList eventAdapter = new EventList(clubHomeActivity.this, events);
                 //attaching adapter to the listview
                 listViewEvents.setAdapter(eventAdapter);
+                //clicking on the items
+                listViewEvents.setEmptyView(findViewById(R.id.empty));
+                listViewEvents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        Intent intent = new Intent(clubHomeActivity.this, updateActivity.class);
+                        Event event = (Event) adapterView.getItemAtPosition(i);
+                        intent.putExtra("eName", event.getEventname());
+                        intent.putExtra("cName", event.getClubName());
+                        intent.putExtra("date", event.getDate());
+                        intent.putExtra("eVenue", event.getVenue());
+                        intent.putExtra("eDesc", event.getDescription());
+                        intent.putExtra("eId", event.getEventId());
+                        intent.putExtra("usid", firebaseUser.getUid());
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                listViewEvents.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        Event event = (Event) adapterView.getItemAtPosition(i);
+                        DatabaseReference databaseTemp1 = FirebaseDatabase.getInstance().getReference("Events (club)").child(firebaseUser.getUid()).child(event.getEventId());
+                        databaseTemp1.removeValue();
+
+                        DatabaseReference databaseTemp = FirebaseDatabase.getInstance().getReference("Events (all)").child(event.getEventId());
+                        databaseTemp.removeValue();
+                        Toast.makeText(clubHomeActivity.this, "Event Deleted.", Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
+                });
             }
 
             @Override
@@ -149,6 +185,11 @@ public class clubHomeActivity extends AppCompatActivity {
                 Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
+
+            case R.id.info:
+                startActivity(new Intent(clubHomeActivity.this, info_club_activity.class));
+                return true;
+
         }
 
         return false;

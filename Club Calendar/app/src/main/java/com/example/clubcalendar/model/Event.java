@@ -6,6 +6,24 @@ public class Event {
     private String description;
     private String venue;
     private String clubName;
+    private String eventId;
+
+    public String getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(String eventId) {
+        this.eventId = eventId;
+    }
+
+    public Event(String eventname, String date, String description, String venue, String clubName, String eventId) {
+        this.eventname = eventname;
+        this.date = date;
+        this.description = description;
+        this.venue = venue;
+        this.clubName = clubName;
+        this.eventId = eventId;
+    }
 
     public Event() {
     }
