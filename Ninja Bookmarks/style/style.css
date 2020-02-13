@@ -1,0 +1,46 @@
+#main_header{
+background-color: #D1C4E9; text-align: center; margin-top: 1px;
+}
+#link_form{
+    background-color:#D1C4E9  ; align-items:  center; align-self: center;
+    margin-left: 50px; margin-right: 50px;padding-left: 50px; padding-right: 50px; padding-bottom: 40px; border-radius: 40px;
+}
+body{
+    margin: 2   px; background:#3C1053; border-radius: 40px;
+}
+#display_link{
+    margin-left: 40px;
+}
+.feild{
+    padding: 6px; 
+}
+.but{
+    background-color: #FFF9C4;  color: maroon; border-radius: 15px; font-family: 'Bowlby One SC', cursive; font-size:12px; border:outset;
+}
+.link{
+    margin-left: 5px; background: #FFE082; text-decoration: none; padding: 3px;
+     border-radius: 10px; color: red;  font-family: 'Bowlby One SC', cursive; font-size: 2;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+#sbut{
+    color: #311B92;
+    padding-left: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px;
+    background-color: #EDE7F6; border: none;font-family: 'Fugaz One', cursive;  border-radius:5px;
+    text-align: center;
+}
+#sbut:hover{
+    background-color:#CE93D8  ;
+color:black ;
+}
+#sbut_show{
+    color: #311B92;
+    padding-left: 20px; padding-top: 10px; padding-right: 30px; padding-bottom: 10px;
+    background-color: #EDE7F6; border: none;font-family: 'Fugaz One', cursive;  border-radius:5px;
+    text-decoration: none;
+}
+#sbut_show:hover{
+    background-color:#CE93D8  ;
+color:black ;
+}

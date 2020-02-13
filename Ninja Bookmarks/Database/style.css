@@ -1,0 +1,81 @@
+.a{
+    margin-left: 370px; margin-right: 300px; 
+}
+body{
+    background-color: #E1F5FE; margin: 0px;
+}
+.display{
+    background-color: #EDE7F6; margin-left:300px; margin-right: 300px;   border-radius:10px;
+}
+.show{
+    background-color: #D1C4E9;
+    margin-left: 50px; margin-right: 50px;
+    padding: 50px; border-radius: 30px;
+    float: center;margin-top: 10px;
+}
+.title{
+    color:#000000; font-family: 'Abel', sans-serif; font-size:25px;
+}
+.url{
+    text-decoration: none;
+    margin-right: 300px;
+    margin-top: 30px;
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.visit{
+    font-family: 'Press Start 2P', cursive;
+     padding: 2px;  border-color: black; margin-right: 200px; border-radius: 10px;
+}
+.note{
+    color: #C70039 ;margin-top: 30px; ;
+}
+#note_title{ font-family: 'Press Start 2P', cursive;
+    padding: 4px;  ; padding-right: 52px;
+    border-radius: 10px;
+}
+.note_display{
+    margin-left: 5px; color:#000000; font-family: 'Abel', sans-serif; font-size:23px;
+}
+.logo{
+    background-color: #3C1053FF; width: 100%;position:fixed; height: 13.16%;
+}
+.text{
+    margin-left: 480px; font-family: 'Lobster', cursive;
+    font-size: 25px; color:#FFFFFF;
+}
+input[type=text] {
+  width: 600px;
+padding-left: 20px; padding-top: 13px; padding-right: 20px; padding-bottom: 13px;
+  border: none;
+  height: 39px;
+  border-radius:7px;
+}
+
+#sbut{
+    color: #311B92;
+    padding-left: 20px; padding-top: 10px; padding-right: 30px; padding-bottom: 10px;
+    background-color: #EDE7F6; border: none;font-family: 'Fugaz One', cursive;  border-radius:5px;
+}
+#sbut:hover{
+    background-color:#CE93D8  ;
+color:black ;
+}
+#export{
+    color: #311B92;
+    padding-left: 20px; padding-top: 8px; padding-right: 30px; padding-bottom: 10px;
+    background-color: #EDE7F6; border: none; text-decoration: none;font-family: 'Fugaz One', cursive; font-size: 15;
+  border-radius:5px;
+}
+#export:hover{
+    background-color:#CE93D8  ;
+    color:black ;
+
+}
+#h{
+    font-size:34px;
+}
