@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Club Calendar</string>
+    <string name="splash_screen_icon">app icon</string>
+    <string name="hint_email">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="text_forgot_password">If forgot password, click here.</string>
+    <string name="test">abcd</string>
+    <string name="event_name">Event Name</string>
+    <string name="date_23_jan_2019">Date (23/01/2019)</string>
+    <string name="venue">Venue</string>
+    <string name="enter_your_email_address">Enter Your Email address</string>
+    <string name="club_name">Club Name</string>
+    <string name="description">Description</string>
+    <string name="welcome1">Welcome to the club calendar app.</string>
+    <string name="welcome2">Click on the red floating Button to add new Events.</string>
+    <string name="welcome3">Click on an Event to edit it.</string>
+    <string name="welcome4">Long press on an Event to delete it.</string>
+    <string name="welcome5">Kindly delete an event once its over.\n
+    We are trying to add auto-delete feature to the app, once its over.</string>
+    <string name="welcome6">Good Luck!!\nFeel free to contact the developers in case of any difficulty.\n
+    Email:- gaurv1407@gmail.com\nPhone:- +916200694236</string>
+
+</resources>

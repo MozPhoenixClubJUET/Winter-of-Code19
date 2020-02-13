@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480661563699",
+    "firebase_url": "https://shared-calendar-17ef5.firebaseio.com",
+    "project_id": "shared-calendar-17ef5",
+    "storage_bucket": "shared-calendar-17ef5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480661563699:android:a66fa0f6415fbec7f5b646",
+        "android_client_info": {
+          "package_name": "com.example.clubcalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480661563699-smtpg4q657n2o0rotmtv517drc4frp2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clubcalendar",
+            "certificate_hash": "12264535a18309db8fa971010bc19481578afa7c"
+          }
+        },
+        {
+          "client_id": "480661563699-3gdet9ncov9huir5g15rj9qbd14i9jd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxqmdrr0bf_1p5qwS8bC18tIbQtclxR6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480661563699-3gdet9ncov9huir5g15rj9qbd14i9jd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

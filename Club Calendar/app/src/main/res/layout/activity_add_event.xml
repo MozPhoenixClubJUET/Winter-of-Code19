@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7968FB"
+    tools:context=".addEventActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/add_an_event_text"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="@string/event_name"
+        android:id="@+id/event_name"
+        android:background="@drawable/add_edittext"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:inputType="date"
+        android:layout_gravity="center"
+        android:hint="@string/date_23_jan_2019"
+        android:background="@drawable/add_edittext"
+        android:id="@+id/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:inputType="textPersonName"
+        android:hint="@string/venue"
+        android:layout_gravity="center"
+        android:background="@drawable/add_edittext"
+        android:id="@+id/venue"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="15dp"
+        android:inputType="textMultiLine"
+        android:hint="@string/description"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:id="@+id/description"
+        android:background="@drawable/desc_edittext"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add this event"
+            android:id="@+id/add_event"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/add_event_background"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            android:text="cancel"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/cancel"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cancel_event_background"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
